@@ -1,12 +1,14 @@
 # Machine Learning Final Project
 
-## Clone project
+## Instructions
+
+### Clone project
 
 ```
 git clone https://github.com/YuichiCanete/ml_final_proj.git
 ```
 
-## Setup
+### Setup
 
 1. Make sure you have miniconda and python installed
 
@@ -17,19 +19,19 @@ git clone https://github.com/YuichiCanete/ml_final_proj.git
 py -3 -m venv .venv
 ```
 
-4. activate environment
+4. Activate environment
 ```
 .venv\Scripts\activate
 ```
 
-5. install flask
+5. Install flask
 ```
 pip install Flask
 ```
 
-Note: instructions will be updated in the future
+Note: Instructions will be updated in the future
 
-## Run app
+### Run app
 ```
 flask --app hello run
 ```
