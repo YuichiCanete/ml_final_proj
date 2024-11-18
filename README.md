@@ -13,6 +13,11 @@ git clone https://github.com/YuichiCanete/ml_final_proj.git
 **1.** Make sure you have miniconda and python installed
 
 **2.** Change directory to the cloned project
+```
+cd ml_final_proj
+```
+
+Open Miniconda
 
 **3.** Create environment
 ```

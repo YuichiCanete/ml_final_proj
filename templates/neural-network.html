@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viralytics - Artificial Neural Network</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <header>
+        <h1>Artificial Neural Network - Predict Future Engagement</h1>
+    </header>
+
+    <section id="description">
+        <p>The Artificial Neural Network predicts future engagement levels across platforms based on comprehensive user activity data.</p>
+    </section>
+
+    <section id="input">
+        <h2>Input Data</h2>
+        <form id="ann-form">
+            <label for="current-minutes-spent">Current Minutes Spent Daily:</label>
+            <input type="number" id="current-minutes-spent" name="current-minutes-spent" required><br><br>
+
+            <label for="current-posts-per-day">Current Posts Per Day:</label>
+            <input type="number" id="current-posts-per-day" name="current-posts-per-day" required><br><br>
+
+            <label for="current-likes-per-day">Current Likes Per Day:</label>
+            <input type="number" id="current-likes-per-day" name="current-likes-per-day" required><br><br>
+
+            <button type="button" onclick="alert('Predicting future engagement based on current trends...')">Predict Engagement</button>
+        
+            <section id="output">
+                <h2>Prediction Result</h2>
+                <p><strong>Predicted Engagement in 30 Days:</strong> 15% increase in engagement</p>
+                <p>Based on your current activity, we predict a 15% increase in engagement in the next 30 days.</p>
+            </section>
+            
+        
+        </form>
+    </section>
+
+</body>
+</html>

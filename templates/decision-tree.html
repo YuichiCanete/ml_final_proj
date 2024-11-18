@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viralytics - Decision Tree</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <header>
+        <h1>Decision Tree - Identify Key Engagement Factors</h1>
+    </header>
+
+    <section id="description">
+        <p>The Decision Tree algorithm helps uncover the most influential factors driving user engagement.</p>
+    </section>
+
+    <section id="input">
+        <h2>Input Data</h2>
+        <form id="decision-tree-form">
+            <label for="platform-used">Platform (e.g., Instagram, Facebook):</label>
+            <input type="text" id="platform-used" name="platform-used" required><br><br>
+
+            <label for="daily-time-spent">Daily Minutes Spent:</label>
+            <input type="number" id="daily-time-spent" name="daily-time-spent" required><br><br>
+
+            <label for="likes-daily">Likes Per Day:</label>
+            <input type="number" id="likes-daily" name="likes-daily" required><br><br>
+
+            <button type="button" onclick="alert('Identifying key factors for high engagement...')">Analyze Factors</button>
+        
+            <section id="output">
+                <h2>Analysis Result</h2>
+                <p><strong>Key Engagement Factor:</strong> Daily Time Spent</p>
+                <p>The decision tree analysis shows that the most significant factor driving your engagement is the daily time you spend on the platform.</p>
+            </section>
+            
+        
+        </form>
+    </section>
+
+</body>
+</html>

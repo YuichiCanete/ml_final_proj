@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viralytics - Support Vector Machine</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+    <header>
+        <h1>Support Vector Machine - Segment Engagement Levels</h1>
+    </header>
+
+    <section id="description">
+        <p>Support Vector Machines (SVM) help classify users into engagement categories like "Casual User" vs. "Power User."</p>
+    </section>
+
+    <section id="input">
+        <h2>Input Data</h2>
+        <form id="svm-form">
+            <label for="minutes-per-day">Minutes Per Day:</label>
+            <input type="number" id="minutes-per-day" name="minutes-per-day" required><br><br>
+
+            <label for="posts-likes-per-day">Posts and Likes Per Day:</label>
+            <input type="number" id="posts-likes-per-day" name="posts-likes-per-day" required><br><br>
+
+            <button type="button" onclick="alert('Classifying user type based on engagement data...')">Classify User Type</button>
+        
+            <section id="output">
+                <h2>Classification Result</h2>
+                <p><strong>User Type:</strong> Power User</p>
+                <p>Based on your daily engagement, you are classified as a Power User.</p>
+            </section>
+            
+        
+        </form>
+    </section>
+
+</body>
+</html>

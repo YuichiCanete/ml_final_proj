@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viralytics - Linear Regression</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <header>
+        <h1>Linear Regression - Predict Follower Growth</h1>
+    </header>
+
+    <section id="description">
+        <p>Linear Regression helps us predict future follower growth based on daily time spent and posts made per day.</p>
+    </section>
+
+    <section id="input">
+        <h2>Input Data</h2>
+        <form id="linear-regression-form">
+            <label for="daily-time">Daily Time Spent (minutes):</label>
+            <input type="number" id="daily-time" name="daily-time" required><br><br>
+
+            <label for="posts-per-day">Posts Per Day:</label>
+            <input type="number" id="posts-per-day" name="posts-per-day" required><br><br>
+
+            <button type="button" onclick="alert('Predicting follower growth based on provided data...')">Analyze Growth</button>
+            
+            <section id="output">
+                <h2>Prediction Result</h2>
+                <p><strong>Predicted Follower Growth:</strong> 120 new followers in the next 30 days based on your daily activity.</p>
+            </section>
+
+        </form>
+    </section>
+
+</body>
+</html>
