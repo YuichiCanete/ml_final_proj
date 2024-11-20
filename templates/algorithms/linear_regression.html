@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Linear Regression</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Linear Regression</h1>
+    <p>Predict the number of new followers based on likes.</p>
+    <form method="post">
+        <label for="likes">Likes:</label>
+        <input type="number" name="likes" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Predicted New Followers: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>

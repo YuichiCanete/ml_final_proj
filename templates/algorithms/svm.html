@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Support Vector Machine</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Support Vector Machine</h1>
+    <p>Categorize the interaction level of posts.</p>
+    <form method="post">
+        <label for="likes">Likes:</label>
+        <input type="number" name="likes" required>
+        <label for="comments">Comments:</label>
+        <input type="number" name="comments" required>
+        <label for="shares">Shares:</label>
+        <input type="number" name="shares" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Predicted Interaction Level: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>

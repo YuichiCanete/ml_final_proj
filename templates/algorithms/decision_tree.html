@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decision Tree</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Decision Tree</h1>
+    <p>Determine the best time to post for maximum engagement.</p>
+    <form method="post">
+        <label for="platform">Platform:</label>
+        <input type="text" name="platform" required>
+        <label for="content_type">Content Type:</label>
+        <input type="text" name="content_type" required>
+        <label for="post_timing">Post Timing:</label>
+        <input type="text" name="post_timing" required>
+        <label for="likes">Likes:</label>
+        <input type="number" name="likes" required>
+        <label for="shares">Shares:</label>
+        <input type="number" name="shares" required>
+        <label for="views">Views:</label>
+        <input type="number" name="views" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Predicted Interaction Level: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>

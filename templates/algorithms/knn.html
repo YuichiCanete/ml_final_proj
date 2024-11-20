@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>K-Nearest Neighbors</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>K-Nearest Neighbors</h1>
+    <p>Predict whether a post will trend or not.</p>
+    <form method="post">
+        <label for="likes">Likes:</label>
+        <input type="number" name="likes" required>
+        <label for="shares">Shares:</label>
+        <input type="number" name="shares" required>
+        <label for="views">Views:</label>
+        <input type="number" name="views" required>
+        <label for="content_type">Content Type:</label>
+        <input type="text" name="content_type" required>
+        <label for="hashtag_count">Hashtag Count:</label>
+        <input type="number" name="hashtag_count" required>
+        <label for="platform">Platform:</label>
+        <input type="text" name="platform" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Will the post trend? {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
